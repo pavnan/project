@@ -155,7 +155,7 @@ public class Main {
             if (random.nextBoolean()) {
                 stock.setPrice(stock.getPrice() + change);
             } else {
-                stock.setPrice(Math.max(1, stock.getPrice() - change));
+                stock.setPrice(stock.getPrice() - change);
             }
         });
         System.out.println("Ceny zostały zaktualizowane!");
